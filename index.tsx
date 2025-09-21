@@ -53,14 +53,17 @@ function App() {
         return (
           <section className="hero-slide animate-fade-scale">
             <div className="icon-wrapper icon-large">🧠</div>
-            <h1 className="hero-title">Lý luận nhận thức</h1>
-            <p className="hero-subtitle">Chủ nghĩa duy vật biện chứng</p>
+            <h1 className="hero-title">Chương 2. Chủ nghĩa duy vật biện chứng</h1>
+            <p className="hero-subtitle">II. Lý luận nhận thức</p>
             <div className="section-divider"></div>
             <div className="content-grid">
               <div className="content-card">
                 <div className="icon-wrapper">👨‍🎓</div>
-                <h3>Nhóm</h3>
-                <p>Prompt Engineer</p>
+                <h3>Thành viên</h3>
+                <p>Tô Minh Tuyền</p>
+                <p>Trương Thiên Lộc</p>
+                <p>Phùng Minh Thiện</p>
+                <p>Trần Lưu Lâm Hoàng</p>
               </div>
               <div className="content-card">
                 <div className="icon-wrapper">🏫</div>
@@ -80,64 +83,52 @@ function App() {
         return (
           <section className="card animate-slide-up">
             <div className="icon-wrapper icon-large">🎯</div>
-            <h2 className="section-title">Đối tượng và nhiệm vụ của lý luận về nhận thức</h2>
+            <h2 className="section-title">Lý luận nhận thức của chủ nghĩa duy vật biện chứng</h2>
             
             <div className="feature-grid">
               <div className="feature-card">
-                <div className="icon-wrapper">🔍</div>
-                <h3 className="section-subtitle">Đối tượng nghiên cứu</h3>
-                <p className="body-text">Quá trình nhận thức của con người, quan hệ giữa chủ thể và khách thể trong nhận thức¹.</p>
+                <div className="icon-wrapper">✨</div>
+                <h3 className="section-subtitle">Khả năng nhận thức</h3>
+                <p className="body-text">Chủ nghĩa duy vật biện chứng khẳng định khả năng con người có thể nhận thức được thế giới.</p>
               </div>
               
               <div className="feature-card">
-                <div className="icon-wrapper">✅</div>
-                <h3 className="section-subtitle">Nhiệm vụ cơ bản</h3>
-                <ul className="enhanced-list">
-                  <li>Khám phá bản chất của quá trình nhận thức</li>
-                  <li>Xác định con đường dẫn đến chân lý</li>
-                  <li>Vạch ra phương pháp nhận thức khoa học</li>
-                </ul>
+                <div className="icon-wrapper">🔄</div>
+                <h3 className="section-subtitle">Quá trình biện chứng</h3>
+                <p className="body-text">Nhận thức không phải là một quá trình diễn ra một lần là xong, mà là một quá trình biện chứng, liên tục phát triển, bổ sung và hoàn thiện.</p>
               </div>
-            </div>
-            
-            <div className="quote-block">
-              <p className="quote-text">"Lý luận nhận thức là cơ sở khoa học cho mọi hoạt động thực tiễn của con người"²</p>
             </div>
           </section>
         );
 
-      case 3:
+       case 3:
         return (
           <section className="card animate-slide-up">
-            <div className="icon-wrapper icon-large">🧩</div>
-            <h2 className="section-title">Nhận thức là gì?</h2>
-            
-            <div className="quote-block">
-              <p className="quote-text">"Nhận thức là quá trình phản ánh thế giới khách quan vào bộ não con người"³</p>
-            </div>
+            <div className="icon-wrapper icon-large">📋</div>
+            <h2 className="section-title">Các nguyên tắc của lý luận nhận thức</h2>
             
             <div className="process-steps">
               <div className="process-step">
                 <div className="step-number">1</div>
                 <div>
-                  <h3 className="section-subtitle">Bản chất nhận thức</h3>
-                  <p className="body-text">Nhận thức là hoạt động phản ánh của chủ thể đối với khách thể thông qua thực tiễn⁴.</p>
+                  <h3 className="section-subtitle">Tính khách quan của tồn tại vật chất</h3>
+                  <p className="body-text">Thế giới vật chất tồn tại khách quan, độc lập với ý thức con người. Ý thức chỉ là sự phản ánh của thế giới đó.</p>
                 </div>
               </div>
               
               <div className="process-step">
                 <div className="step-number">2</div>
                 <div>
-                  <h3 className="section-subtitle">Tính chất nhận thức</h3>
-                  <p className="body-text">Là quá trình biện chứng, từ chưa biết đến biết, từ biết ít đến biết nhiều, từ biết chưa đúng đến biết đúng⁵.</p>
+                  <h3 className="section-subtitle">Tính chủ quan của hình ảnh phản ánh</h3>
+                  <p className="body-text">Cảm giác, tri giác, ý thức là hình ảnh chủ quan của thế giới khách quan, mang tính tích cực và sáng tạo, không phải là sự phản ánh thụ động.</p>
                 </div>
               </div>
               
               <div className="process-step">
                 <div className="step-number">3</div>
                 <div>
-                  <h3 className="section-subtitle">Kết quả nhận thức</h3>
-                  <p className="body-text">Tạo ra các khái niệm, quy luật, lý thuyết khoa học phản ánh đúng đắn thế giới khách quan⁶.</p>
+                  <h3 className="section-subtitle">Thực tiễn làm tiêu chuẩn</h3>
+                  <p className="body-text">Thực tiễn là quan điểm cơ bản và là tiêu chuẩn để kiểm tra tính chân thực của tri thức.</p>
                 </div>
               </div>
             </div>
@@ -154,13 +145,13 @@ function App() {
               <div className="content-card">
                 <div className="icon-wrapper">🌍</div>
                 <h3 className="section-subtitle">Nguồn gốc</h3>
-                <p className="body-text">Thế giới vật chất khách quan là nguồn gốc và đối tượng của nhận thức⁶.</p>
+                <p className="body-text">Thế giới vật chất khách quan là nguồn gốc và đối tượng của nhận thức.</p>
               </div>
               
               <div className="content-card">
                 <div className="icon-wrapper">🧠</div>
                 <h3 className="section-subtitle">Bản chất</h3>
-                <p className="body-text">Nhận thức là quá trình phản ánh hiện thực khách quan vào bộ óc con người⁷.</p>
+                <p className="body-text">Nhận thức là quá trình phản ánh hiện thực khách quan vào bộ óc con người.</p>
               </div>
             </div>
             
@@ -180,41 +171,36 @@ function App() {
         return (
           <section className="card animate-slide-up">
             <div className="icon-wrapper icon-large">⚡</div>
-            <h2 className="section-title">Vai trò của thực tiễn trong nhận thức</h2>
+            <h2 className="section-title">Thực tiễn và vai trò của thực tiễn</h2>
             
             <div className="quote-block">
-              <p className="quote-text">"Thực tiễn là cơ sở, động lực và mục đích của nhận thức"⁸</p>
+              <p className="quote-text">Phạm trù thực tiễn: Là toàn bộ hoạt động vật chất – cảm tính, có tính lịch sử – xã hội của con người, nhằm cải tạo tự nhiên và xã hội</p>
             </div>
             
+            <h3 className="section-subtitle">Đặc trưng của thực tiễn:</h3>
             <div className="feature-grid">
               <div className="feature-card">
+                <div className="icon-wrapper">🔨</div>
+                <h3 className="section-subtitle">Tính vật chất - cảm tính</h3>
+                <p className="body-text">Hoạt động thực tiễn có tính vật chất cụ thể, có thể quan sát được.</p>
+              </div>
+              
+              <div className="feature-card">
+                <div className="icon-wrapper">📚</div>
+                <h3 className="section-subtitle">Tính lịch sử - xã hội</h3>
+                <p className="body-text">Gắn liền với sự phát triển lịch sử và điều kiện xã hội cụ thể.</p>
+              </div>
+              
+              <div className="feature-card">
                 <div className="icon-wrapper">🎯</div>
-                <h3 className="section-subtitle">Cơ sở của nhận thức</h3>
-                <p className="body-text">Thực tiễn tạo ra nhu cầu nhận thức và cung cấp phương tiện cho nhận thức⁹.</p>
-              </div>
-              
-              <div className="feature-card">
-                <div className="icon-wrapper">🚀</div>
-                <h3 className="section-subtitle">Động lực nhận thức</h3>
-                <p className="body-text">Thực tiễn thúc đẩy nhận thức phát triển, đặt ra những vấn đề mới¹⁰.</p>
-              </div>
-              
-              <div className="feature-card">
-                <div className="icon-wrapper">🎪</div>
-                <h3 className="section-subtitle">Mục đích nhận thức</h3>
-                <p className="body-text">Nhận thức phục vụ thực tiễn, hướng dẫn và cải tạo thế giới¹¹.</p>
-              </div>
-              
-              <div className="feature-card">
-                <div className="icon-wrapper">✅</div>
-                <h3 className="section-subtitle">Tiêu chuẩn kiểm tra</h3>
-                <p className="body-text">Thực tiễn là tiêu chuẩn duy nhất để kiểm tra tính đúng đắn của tri thức¹².</p>
+                <h3 className="section-subtitle">Tính tự giác</h3>
+                <p className="body-text">Con người hoạt động có ý thức, có mục đích và kế hoạch.</p>
               </div>
             </div>
           </section>
         );
 
-      case 6:
+     case 6:
         return (
           <section className="card animate-slide-up">
             <div className="icon-wrapper icon-large">🏗️</div>
@@ -225,146 +211,230 @@ function App() {
                 <div className="step-number">🔨</div>
                 <div>
                   <h3 className="section-subtitle">Hoạt động sản xuất vật chất</h3>
-                  <p className="body-text">Sản xuất ra của cải vật chất để duy trì và phát triển đời sống con người¹³.</p>
+                  <p className="body-text">Hình thức cơ bản và quan trọng nhất, là phương thức tồn tại của con người và xã hội.</p>
                 </div>
               </div>
               
               <div className="process-step">
-                <div className="step-number">⚔️</div>
+                <div className="step-number">⚖️</div>
                 <div>
-                  <h3 className="section-subtitle">Hoạt động đấu tranh xã hội-chính trị</h3>
-                  <p className="body-text">Cải tạo các quan hệ xã hội, đấu tranh cho công bằng và tiến bộ¹⁴.</p>
+                  <h3 className="section-subtitle">Hoạt động chính trị – xã hội</h3>
+                  <p className="body-text">Nhằm biến đổi, cải tạo và phát triển các quan hệ xã hội.</p>
                 </div>
               </div>
               
               <div className="process-step">
                 <div className="step-number">🔬</div>
                 <div>
-                  <h3 className="section-subtitle">Hoạt động thí nghiệm khoa học</h3>
-                  <p className="body-text">Kiểm chứng lý thuyết khoa học và khám phá quy luật tự nhiên¹⁵.</p>
+                  <h3 className="section-subtitle">Hoạt động thực nghiệm khoa học</h3>
+                  <p className="body-text">Con người chủ động tạo ra các điều kiện để tiến hành thực nghiệm, phục vụ nghiên cứu.</p>
                 </div>
               </div>
             </div>
+          </section>
+        );
+
+       case 7:
+        return (
+          <section className="card animate-slide-up">
+            <div className="icon-wrapper icon-large">🎪</div>
+            <h2 className="section-title">Vai trò của thực tiễn đối với nhận thức</h2>
             
-            <div className="quote-block">
-              <p className="quote-text">"Ba hình thức thực tiễn này có mối liên hệ mật thiết, thống nhất và bổ sung cho nhau"¹⁶</p>
+            <div className="feature-grid">
+              <div className="feature-card">
+                <div className="icon-wrapper">🎯</div>
+                <h3 className="section-subtitle">Cơ sở, động lực của nhận thức</h3>
+                <p className="body-text">Mọi nhận thức đều nảy sinh từ thực tiễn. Thực tiễn đặt ra nhu cầu, nhiệm vụ và phương hướng cho nhận thức phát triển.</p>
+              </div>
+              
+              <div className="feature-card">
+                <div className="icon-wrapper">🚀</div>
+                <h3 className="section-subtitle">Mục đích của nhận thức</h3>
+                <p className="body-text">Nhận thức nhằm phục vụ, soi đường và chỉ đạo thực tiễn.</p>
+              </div>
+              
+              <div className="feature-card">
+                <div className="icon-wrapper">✅</div>
+                <h3 className="section-subtitle">Tiêu chuẩn kiểm tra chân lý</h3>
+                <p className="body-text">Thực tiễn là tiêu chuẩn khách quan duy nhất để kiểm tra chân lý và bác bỏ sai lầm.</p>
+              </div>
             </div>
           </section>
         );
 
-      case 7:
+     case 8:
         return (
-          <section className="card">
-            <h2>Tính cụ thể của Chân lý</h2>
-            <p>Chân lý luôn gắn liền với điều kiện thời gian, không gian và hoàn cảnh lịch sử cụ thể²².</p>
-            <h3>Ý nghĩa:</h3>
-            <ul>
-              <li><strong>Chống chủ nghĩa giáo điều:</strong> Không áp dụng máy móc các công thức²³</li>
-              <li><strong>Chống chủ nghĩa tương đối:</strong> Khẳng định tính khách quan của chân lý²⁴</li>
-              <li><strong>Hướng dẫn thực tiễn:</strong> Vận dụng linh hoạt, sáng tạo²⁵</li>
-            </ul>
-            <p className="quote-text">
-              <em>"Không có chân lý trừu tượng, chân lý luôn cụ thể"</em> - V.I. Lenin²⁶
-            </p>
-          </section>
-        );
-
-      case 8:
-        return (
-          <section className="card">
-            <h2>Các giai đoạn cơ bản của quá trình nhận thức</h2>
-            <p>Quá trình nhận thức diễn ra theo con đường biện chứng:</p>
-            <p className="quote-text"><em>"Từ trực quan sinh động đến tư duy trừu tượng, và từ tư duy trừu tượng đến thực tiễn"</em>²⁷.</p>
+          <section className="card animate-slide-up">
+            <div className="icon-wrapper icon-large">🔄</div>
+            <h2 className="section-title">Các giai đoạn cơ bản của quá trình nhận thức</h2>
+            
+            <div className="quote-block">
+              <p className="quote-text">Quá trình nhận thức diễn ra theo con đường biện chứng:</p>
+              <p className="quote-text"><em>"Từ trực quan sinh động đến tư duy trừu tượng, và từ tư duy trừu tượng đến thực tiễn"</em></p>
+            </div>
           </section>
         );
 
       case 9:
         return (
-          <section className="card">
-            <h2>Nhận thức cảm tính (Trực quan sinh động)</h2>
-            <p>Là giai đoạn đầu tiên, phản ánh trực tiếp khách thể thông qua các giác quan²⁸.</p>
-            <h3>Các hình thức:</h3>
-            <ul>
-              <li><strong>Cảm giác:</strong> Phản ánh một thuộc tính riêng lẻ của sự vật²⁹.</li>
-              <li><strong>Tri giác:</strong> Tổng hợp nhiều cảm giác, cho hình ảnh trọn vẹn hơn về sự vật³⁰.</li>
-              <li><strong>Biểu tượng:</strong> Hình ảnh sự vật được tái hiện trong óc khi không còn tác động trực tiếp³¹.</li>
-            </ul>
-            <p><strong>Hạn chế:</strong> Chưa đem lại hiểu biết sâu sắc, khái quát, chưa phân biệt được bản chất và hiện tượng³².</p>
+          <section className="card animate-slide-up">
+            <div className="icon-wrapper icon-large">👁️</div>
+            <h2 className="section-title">Nhận thức cảm tính (Trực quan sinh động)</h2>
+            
+            <p className="body-text">Là giai đoạn đầu tiên, phản ánh trực tiếp khách thể thông qua các giác quan.</p>
+            
+            <h3 className="section-subtitle">Các hình thức:</h3>
+            <div className="feature-grid">
+              <div className="feature-card">
+                <div className="icon-wrapper">👂</div>
+                <h3>Cảm giác</h3>
+                <p className="body-text">Phản ánh một thuộc tính riêng lẻ của sự vật.</p>
+              </div>
+              
+              <div className="feature-card">
+                <div className="icon-wrapper">🖼️</div>
+                <h3>Tri giác</h3>
+                <p className="body-text">Tổng hợp nhiều cảm giác, cho hình ảnh trọn vẹn hơn về sự vật.</p>
+              </div>
+              
+              <div className="feature-card">
+                <div className="icon-wrapper">💭</div>
+                <h3>Biểu tượng</h3>
+                <p className="body-text">Hình ảnh sự vật được tái hiện trong óc khi không còn tác động trực tiếp.</p>
+              </div>
+            </div>
+            
+            <div className="quote-block">
+              <p><strong>Hạn chế:</strong> Chưa đem lại hiểu biết sâu sắc, khái quát, chưa phân biệt được bản chất và hiện tượng.</p>
+            </div>
           </section>
         );
 
       case 10:
         return (
-          <section className="card">
-            <h2>Nhận thức lý tính (Tư duy trừu tượng)</h2>
-            <p>Bắt nguồn từ nhận thức cảm tính, phản ánh sự vật một cách gián tiếp, khái quát và đầy đủ hơn³³.</p>
-            <h3>Các hình thức:</h3>
-            <ul>
-              <li><strong>Khái niệm:</strong> Phản ánh các thuộc tính chung, bản chất của sự vật³⁴.</li>
-              <li><strong>Phán đoán:</strong> Liên kết các khái niệm để phản ánh mối liên hệ giữa các sự vật³⁵.</li>
-              <li><strong>Suy lý (Suy luận):</strong> Đi từ cái đã biết đến cái chưa biết một cách gián tiếp (Quy nạp và Diễn dịch)³⁶.</li>
-            </ul>
-            <p><strong>Ưu điểm:</strong> Phản ánh được mối liên hệ bản chất, tất nhiên, bên trong của sự vật³⁷.</p>
+          <section className="card animate-slide-up">
+            <div className="icon-wrapper icon-large">🧮</div>
+            <h2 className="section-title">Nhận thức lý tính (Tư duy trừu tượng)</h2>
+            
+            <p className="body-text">Bắt nguồn từ nhận thức cảm tính, phản ánh sự vật một cách gián tiếp, khái quát và đầy đủ hơn.</p>
+            
+            <h3 className="section-subtitle">Các hình thức:</h3>
+            <div className="feature-grid">
+              <div className="feature-card">
+                <div className="icon-wrapper">💡</div>
+                <h3>Khái niệm</h3>
+                <p className="body-text">Phản ánh các thuộc tính chung, bản chất của sự vật.</p>
+              </div>
+              
+              <div className="feature-card">
+                <div className="icon-wrapper">🔗</div>
+                <h3>Phán đoán</h3>
+                <p className="body-text">Liên kết các khái niệm để phản ánh mối liên hệ giữa các sự vật.</p>
+              </div>
+              
+              <div className="feature-card">
+                <div className="icon-wrapper">🧠</div>
+                <h3>Suy lý (Suy luận)</h3>
+                <p className="body-text">Đi từ cái đã biết đến cái chưa biết một cách gián tiếp (Quy nạp và Diễn dịch).</p>
+              </div>
+            </div>
+            
+            <div className="quote-block">
+              <p><strong>Ưu điểm:</strong> Phản ánh được mối liên hệ bản chất, tất nhiên, bên trong của sự vật.</p>
+            </div>
           </section>
         );
 
       case 11:
         return (
-          <section className="card">
-            <h2>Sự thống nhất giữa các giai đoạn và thực tiễn</h2>
-            <p>Nhận thức cảm tính và lý tính là hai giai đoạn khác nhau nhưng thống nhất, liên hệ và bổ sung cho nhau³⁸.</p>
-            <h3>Vai trò của thực tiễn:</h3>
-            <ul>
-              <li><strong>Cơ sở của nhận thức:</strong> Cung cấp đối tượng và phương tiện nhận thức³⁹.</li>
-              <li><strong>Động lực của nhận thức:</strong> Đặt ra nhiệm vụ và thúc đẩy phát triển⁴⁰.</li>
-              <li><strong>Mục đích của nhận thức:</strong> Hướng dẫn và phục vụ thực tiễn⁴¹.</li>
-              <li><strong>Tiêu chuẩn của chân lý:</strong> Kiểm nghiệm tính đúng đắn của nhận thức⁴².</li>
-            </ul>
+          <section className="card animate-slide-up">
+            <div className="icon-wrapper icon-large">🤝</div>
+            <h2 className="section-title">Sự thống nhất giữa các giai đoạn và thực tiễn</h2>
+            
+            <div className="feature-grid">
+              <div className="feature-card">
+                <div className="icon-wrapper">🔄</div>
+                <h3>Thống nhất và bổ sung</h3>
+                <p className="body-text">Nhận thức cảm tính và lý tính là hai giai đoạn khác nhau nhưng thống nhất, liên hệ và bổ sung cho nhau.</p>
+              </div>
+              
+              <div className="feature-card">
+                <div className="icon-wrapper">♻️</div>
+                <h3>Chu trình liên tục</h3>
+                <p className="body-text">Quá trình nhận thức lặp đi lặp lại chu trình "Trực quan sinh động → Tư duy trừu tượng → Thực tiễn" để ngày càng tiến sâu hơn vào bản chất sự vật.</p>
+              </div>
+              
+              <div className="feature-card">
+                <div className="icon-wrapper">♾️</div>
+                <h3>Quá trình vô tận</h3>
+                <p className="body-text">Nhận thức của con người là một quá trình vô tận.</p>
+              </div>
+            </div>
           </section>
         );
 
       case 12:
         return (
-          <section className="card">
-            <h2>Thực tiễn - Tiêu chuẩn duy nhất của Chân lý</h2>
-            <p>Thực tiễn xã hội là hoạt động vật chất có tính mục đích của con người nhằm cải tạo thế giới⁴³.</p>
-            <h3>Tại sao thực tiễn là tiêu chuẩn duy nhất?</h3>
-            <ul>
-              <li><strong>Tính khách quan:</strong> Không phụ thuộc vào ý thức chủ quan⁴⁴</li>
-              <li><strong>Tính cảm tính:</strong> Có thể quan sát, đo lường được⁴⁵</li>
-              <li><strong>Tính toàn diện:</strong> Kiểm nghiệm mọi lĩnh vực nhận thức⁴⁶</li>
-            </ul>
-            <p className="quote-text">
-              <em>"Vấn đề con người có tư duy đúng hay không... là vấn đề thực tiễn"</em> - K. Marx⁴⁷
-            </p>
+          <section className="card animate-slide-up">
+            <div className="icon-wrapper icon-large">💎</div>
+            <h2 className="section-title">Chân lý và các tính chất</h2>
+            
+            <div className="quote-block">
+              <h3 className="section-subtitle">Khái niệm chân lý:</h3>
+              <p className="quote-text">Là tri thức phù hợp với hiện thực khách quan và đã được thực tiễn kiểm nghiệm.</p>
+            </div>
+            
+            <h3 className="section-subtitle">Các tính chất của chân lý:</h3>
+            <div className="feature-grid">
+              <div className="feature-card">
+                <div className="icon-wrapper">🌍</div>
+                <h3>Tính khách quan</h3>
+                <p className="body-text">Nội dung của chân lý là khách quan, không phụ thuộc vào ý muốn chủ quan.</p>
+              </div>
+              
+              <div className="feature-card">
+                <div className="icon-wrapper">⚖️</div>
+                <h3>Tính tương đối và tuyệt đối</h3>
+                <p className="body-text">Chân lý tuyệt đối là tổng số của các chân lý tương đối.</p>
+              </div>
+              
+              <div className="feature-card">
+                <div className="icon-wrapper">📍</div>
+                <h3>Tính cụ thể</h3>
+                <p className="body-text">Chân lý luôn gắn với điều kiện, hoàn cảnh lịch sử, không gian và thời gian cụ thể.</p>
+              </div>
+            </div>
+          </section>
+        );
+
+
+      case 15:
+        return (
+          <section className="card animate-slide-up">
+            <div className="icon-wrapper icon-large">🎯</div>
+            <h2 className="section-title">Kết luận</h2>
+            
+            <div className="feature-grid">
+              <div className="feature-card">
+                <div className="icon-wrapper">✅</div>
+                <h3>Tôn trọng tính khách quan</h3>
+                <p className="body-text">Trong nhận thức và hoạt động thực tiễn, cần phải tôn trọng tính khách quan và hành động theo quy luật khách quan.</p>
+              </div>
+              
+              <div className="feature-card">
+                <div className="icon-wrapper">⚠️</div>
+                <h3>Cảnh báo về sai lầm</h3>
+                <p className="body-text">Việc chấp nhận một quan điểm chỉ vì được số đông tin theo mà thiếu sự kiểm chứng khách quan có thể dẫn đến những sai lầm nghiêm trọng.</p>
+              </div>
+            </div>
+            
+            <div className="quote-block">
+              <p className="quote-text"><strong>Cảm ơn các bạn đã lắng nghe!</strong></p>
+            </div>
           </section>
         );
 
       case 13:
-        return (
-          <section className="card">
-            <h2>Tạm Kết</h2>
-            <h3>Chân lý theo quan điểm Triết học Mác - Lênin</h3>
-            <p>
-              ☑️ <strong>Có tính khách quan:</strong> Không phụ thuộc vào ý thức chủ quan.
-            </p>
-            <p>
-              ☑️ <strong>Có tính tuyệt đối:</strong> Phản ánh đúng hiện thực khách quan.
-            </p>
-            <p>
-              ☑️ <strong>Có tính tương đối:</strong> Luôn phát triển và hoàn thiện.
-            </p>
-            <p>
-              ☑️ <strong>Có tính cụ thể:</strong> Gắn liền với điều kiện lịch sử cụ thể.
-            </p>
-            <p>
-              ☑️ <strong>Được thực tiễn kiểm nghiệm:</strong> Thực tiễn là tiêu chuẩn duy nhất.
-            </p>
-            <p className="footnote">Các tài liệu tham khảo: [1] Giáo trình Triết học Mác - Lênin, NXB Chính trị Quốc gia Sự thật</p>
-          </section>
-        );
-
-      case 14:
         return (
           <section className="card">
             <h2>Chân lý và Sự thừa nhận của Đám đông</h2>
@@ -372,30 +442,30 @@ function App() {
             <div className="quote-text">
               <p>
                 "Cái gì đám đông thừa nhận thì chính là chân lý" - quan điểm sai lầm về mặt triết học, 
-                đi ngược lại nguyên tắc của chủ nghĩa duy vật biện chứng⁹.
+                đi ngược lại nguyên tắc của chủ nghĩa duy vật biện chứng.
               </p>
             </div>
             <p>
-              • <strong>Chân lý không phụ thuộc</strong> vào niềm tin của cá nhân hay số đông¹⁰.
+              • <strong>Chân lý không phụ thuộc</strong> vào niềm tin của cá nhân hay số đông.
             </p>
             <p>
               • Chấp nhận một quan điểm chỉ vì số đông tin theo mà không có kiểm chứng khách quan 
-              có thể dẫn đến sai lầm nghiêm trọng¹¹.
+              có thể dẫn đến sai lầm nghiêm trọng.
             </p>
             
             <h3>"Quần chúng nhân dân" ≠ "Đám đông tin theo"</h3>
             <p>
               <strong>Quần chúng nhân dân:</strong> Chủ thể sáng tạo, động lực phát triển lịch sử, 
-              hoạt động thực tiễn theo quy luật khách quan¹².
+              hoạt động thực tiễn theo quy luật khách quan.
             </p>
             <p>
               <strong>Đám đông tin theo:</strong> Sự thừa nhận dựa trên niềm tin chủ quan, 
-              không phải cơ sở xác định chân lý¹³.
+              không phải cơ sở xác định chân lý.
             </p>
           </section>
         );
 
-      case 15:
+      case 14:
         return (
           <section className="card">
             <h2>Ví dụ thực tiễn: Khi "Đám đông" sai lầm</h2>
@@ -428,7 +498,7 @@ function App() {
             <div className="quote-text">
               <p>
                 <strong>Kết luận:</strong> Chân lý luôn phải bắt nguồn và được kiểm nghiệm 
-                bởi hiện thực khách quan, không phải sự thừa nhận của đám đông¹⁵.
+                bởi hiện thực khách quan, không phải sự thừa nhận của đám đông.
               </p>
             </div>
           </section>
