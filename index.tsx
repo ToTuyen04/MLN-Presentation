@@ -86,12 +86,12 @@ function App() {
         <div className="content">
           <div className="hero-content">
             <h1>🎓 CHÂN LÝ TRONG TRIẾT HỌC MÁC - LÊNIN</h1>
-            <h2>⭐ Đặc điểm và Tiêu chuẩn</h2>
+            <h2>⭐ Đám đông có tạo nên chân lý??</h2>
             <div className="author-info">
               <div className="author-card">
                 <h3>👨‍🎓 Báo cáo viên: Nguyễn Tô Tuyên</h3>
                 <p>📚 Lớp: AI1806</p>
-                <p>👨‍🏫 Giảng viên: TS. Lê Văn Thiện</p>
+                <p>👨‍🏫 Giảng viên: Nguyễn Văn Bình</p>
               </div>
             </div>
             <div className="slide-hint">
