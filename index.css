@@ -12,6 +12,9 @@
   --accent-color: #38b2ac;
   --border-color: #cbd5e0;
   --header-subtitle-color: #6c757d;
+  /* Parallax scroll offset */
+  --scroll-offset: 0px;
+  --scroll-rotation: 0deg;
 }
 
 [data-theme="dark"] {
@@ -34,6 +37,7 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
   position: relative;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 /* Background decorative patterns */
@@ -41,9 +45,9 @@ body::before,
 body::after {
   content: '';
   position: fixed;
-  top: 0;
+  top: -100vh;
   width: 600px;
-  height: 100vh;
+  height: 400vh;
   background-image: url('/images/trong.png');
   background-repeat: repeat-y;
   background-size: 540px auto;
@@ -51,17 +55,19 @@ body::after {
   z-index: -1;
   pointer-events: none;
   transition: opacity 0.3s ease, filter 0.3s ease;
+  will-change: transform;
 }
 
 body::before {
   left: -300px;
   background-position: left center;
+  transform: translateY(calc(-1 * var(--scroll-offset))) rotate(var(--scroll-rotation));
 }
 
 body::after {
   right: -300px;
   background-position: right center;
-  transform: scaleX(-1); /* Mirror the right pattern */
+  transform: scaleX(-1) translateY(calc(-1 * var(--scroll-offset))) rotate(calc(-1 * var(--scroll-rotation)));
 }
 
 /* Dark mode adjustments for patterns */
@@ -113,6 +119,60 @@ body::after {
   transform: scale(1.2);
 }
 
+/* Discussion Button */
+.discussion-btn {
+  position: fixed;
+  top: 20px;
+  right: 85px;
+  padding: 12px 20px;
+  border-radius: 25px;
+  border: 2px solid var(--accent-color);
+  background: var(--card-background);
+  color: var(--accent-color);
+  cursor: pointer;
+  font-family: var(--body-font);
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px var(--shadow-color);
+  z-index: 1000;
+  white-space: nowrap;
+}
+
+.discussion-btn:hover {
+  background: var(--accent-color);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(56, 178, 172, 0.3);
+}
+
+/* Back Button */
+.back-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  padding: 12px 20px;
+  border-radius: 25px;
+  border: 2px solid var(--primary-color);
+  background: var(--card-background);
+  color: var(--primary-color);
+  cursor: pointer;
+  font-family: var(--body-font);
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px var(--shadow-color);
+  z-index: 1000;
+  white-space: nowrap;
+}
+
+.back-btn:hover {
+  background: var(--primary-color);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(43, 123, 184, 0.3);
+}
+
 header {
   text-align: center;
   margin-bottom: 40px;
@@ -135,6 +195,21 @@ header p {
   font-size: 1.2rem;
   color: var(--header-subtitle-color);
   font-style: italic;
+}
+
+.subtitle-quote {
+  font-size: 1.5rem !important;
+  font-style: italic !important;
+  font-weight: 600;
+  color: var(--primary-color) !important;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  line-height: 1.6;
+}
+
+[data-theme="dark"] .subtitle-quote {
+  color: var(--accent-color) !important;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .card, .conclusion {
@@ -174,6 +249,18 @@ h3 {
   margin-bottom: 15px;
   border-left: 4px solid var(--accent-color);
   padding-left: 15px;
+}
+
+h4 {
+  font-family: var(--heading-font);
+  color: var(--secondary-color);
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 12px;
+  padding-left: 10px;
+  border-left: 3px solid var(--accent-color);
+  opacity: 0.9;
 }
 
 p {
@@ -296,5 +383,149 @@ ul li:before {
   
   .concept-image img {
     max-height: 220px;
+  }
+  
+  .discussion-btn {
+    font-size: 12px;
+    padding: 10px 16px;
+    right: 75px;
+  }
+  
+  .back-btn {
+    font-size: 12px;
+    padding: 10px 16px;
+    left: 15px;
+  }
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  backdrop-filter: blur(5px);
+  animation: fadeIn 0.3s ease;
+}
+
+.modal-content {
+  background: var(--card-background);
+  border-radius: 16px;
+  max-width: 90vw;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 30px;
+  position: relative;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  animation: slideIn 0.3s ease;
+  width: 800px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: var(--text-color);
+  transition: all 0.3s ease;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-close:hover {
+  background: var(--accent-color);
+  color: white;
+  transform: rotate(90deg);
+}
+
+.modal-content h2 {
+  color: var(--primary-color);
+  margin-bottom: 25px;
+  font-size: 1.8rem;
+  border-bottom: 3px solid var(--accent-color);
+  padding-bottom: 10px;
+}
+
+.modal-section {
+  margin-bottom: 30px;
+}
+
+.modal-section h3 {
+  color: var(--primary-color);
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  border-left: 4px solid var(--accent-color);
+  padding-left: 15px;
+}
+
+.modal-section h4 {
+  color: var(--secondary-color);
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.modal-section p {
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.modal-section ul {
+  margin: 15px 0;
+  padding-left: 20px;
+}
+
+.modal-section li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from { 
+    opacity: 0;
+    transform: translateY(-50px) scale(0.9);
+  }
+  to { 
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Modal responsive */
+@media (max-width: 768px) {
+  .modal-content {
+    width: 95vw;
+    padding: 20px;
+    max-height: 85vh;
+  }
+  
+  .modal-content h2 {
+    font-size: 1.5rem;
+  }
+  
+  .modal-section h3 {
+    font-size: 1.2rem;
+  }
+  
+  .modal-section h4 {
+    font-size: 1.1rem;
   }
 }
