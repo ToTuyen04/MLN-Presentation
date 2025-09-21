@@ -59,8 +59,8 @@ function App() {
             <div className="content-grid">
               <div className="content-card">
                 <div className="icon-wrapper">👨‍🎓</div>
-                <h3>Báo cáo viên</h3>
-                <p>Nguyễn Tô Tuyên</p>
+                <h3>Nhóm</h3>
+                <p>Prompt Engineer</p>
               </div>
               <div className="content-card">
                 <div className="icon-wrapper">🏫</div>
@@ -70,7 +70,7 @@ function App() {
               <div className="content-card">
                 <div className="icon-wrapper">👨‍🏫</div>
                 <h3>Giảng viên</h3>
-                <p>TS. Lê Văn Thiện</p>
+                <p>Nguyễn Văn Bình</p>
               </div>
             </div>
           </section>
