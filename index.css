@@ -1,0 +1,300 @@
+
+:root {
+  /* Light mode colors */
+  --background-color: #e2e8f0;
+  --text-color: #2d3748;
+  --primary-color: #2b7bb8;
+  --secondary-color: #4a90b8;
+  --heading-font: 'Inter', 'Segoe UI', system-ui, sans-serif;
+  --body-font: 'Inter', 'Segoe UI', system-ui, sans-serif;
+  --card-background: #ffffff;
+  --shadow-color: rgba(0, 0, 0, 0.12);
+  --accent-color: #38b2ac;
+  --border-color: #cbd5e0;
+  --header-subtitle-color: #6c757d;
+}
+
+[data-theme="dark"] {
+  /* Dark mode colors */
+  --background-color: #1a202c;
+  --text-color: #e2e8f0;
+  --card-background: #2d3748;
+  --shadow-color: rgba(0, 0, 0, 0.3);
+  --border-color: #4a5568;
+  --header-subtitle-color: #a0aec0;
+}
+
+body {
+  font-family: var(--body-font);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.7;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Background decorative patterns */
+body::before,
+body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  width: 600px;
+  height: 100vh;
+  background-image: url('images/trong.png');
+  background-repeat: repeat-y;
+  background-size: 540px auto;
+  opacity: 0.8;
+  z-index: -1;
+  pointer-events: none;
+  transition: opacity 0.3s ease, filter 0.3s ease;
+}
+
+body::before {
+  left: -300px;
+  background-position: left center;
+}
+
+body::after {
+  right: -300px;
+  background-position: right center;
+  transform: scaleX(-1); /* Mirror the right pattern */
+}
+
+/* Dark mode adjustments for patterns */
+[data-theme="dark"] body::before,
+[data-theme="dark"] body::after {
+  opacity: 0.7;
+  filter: invert(1) brightness(1.5) contrast(1.2);
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid var(--primary-color);
+  background: var(--card-background);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px var(--shadow-color);
+  z-index: 1000;
+  font-size: 1.2rem;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 16px var(--shadow-color);
+}
+
+.theme-toggle .theme-icon {
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.theme-toggle:hover .theme-icon {
+  transform: scale(1.2);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-family: var(--heading-font);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  margin-bottom: 0.5rem;
+  padding: 20px 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(43, 123, 184, 0.3);
+}
+
+header p {
+  font-size: 1.2rem;
+  color: var(--header-subtitle-color);
+  font-style: italic;
+}
+
+.card, .conclusion {
+  background-color: var(--card-background);
+  border-radius: 12px;
+  box-shadow: 0 8px 20px var(--shadow-color);
+  padding: 35px;
+  margin-bottom: 30px;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.3s ease, border-color 0.3s ease;
+  border: 1px solid var(--border-color);
+}
+
+.card:hover, .conclusion:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.18);
+}
+
+h2 {
+  font-family: var(--heading-font);
+  color: white;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 15px 25px;
+  border-radius: 8px;
+  margin-top: 0;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 8px rgba(43, 123, 184, 0.2);
+}
+
+h3 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  border-left: 4px solid var(--accent-color);
+  padding-left: 15px;
+}
+
+p {
+  font-family: var(--body-font);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--text-color);
+  margin-bottom: 16px;
+}
+
+p strong {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+ul {
+  margin: 15px 0;
+  padding-left: 0;
+}
+
+ul li {
+  font-family: var(--body-font);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--text-color);
+  margin-bottom: 12px;
+  padding-left: 25px;
+  position: relative;
+  list-style: none;
+}
+
+ul li:before {
+  content: "●";
+  color: var(--accent-color);
+  position: absolute;
+  left: 0;
+  font-size: 1.2rem;
+}
+
+.conclusion {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(43, 123, 184, 0.3);
+}
+
+.conclusion h2 {
+  background: none;
+  color: white;
+  margin-bottom: 20px;
+  box-shadow: none;
+}
+
+.conclusion p {
+  color: white;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+/* Styles for images */
+.header-image {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header-image img {
+  max-width: 100%;
+  height: auto;
+  max-height: 250px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.header-image img:hover {
+  transform: scale(1.02);
+}
+
+.concept-image {
+  text-align: center;
+  margin: 25px 0;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+.concept-image img {
+  max-width: 100%;
+  height: auto;
+  max-height: 300px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.concept-image img:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2.2rem;
+  }
+  
+  header p {
+    font-size: 1rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+  
+  .header-image img {
+    max-height: 180px;
+  }
+  
+  .concept-image img {
+    max-height: 220px;
+  }
+}
