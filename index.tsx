@@ -34,7 +34,7 @@ function App() {
       
       <header>
         <div className="header-image">
-          <img src="images/3people.png" alt="Marx, Engels và Lenin - Ba nhà tư tưởng vĩ đại" />
+          <img src="/images/3people.png" alt="Marx, Engels và Lenin - Ba nhà tư tưởng vĩ đại" />
         </div>
         <h1>Chân lý trong Triết học Mác – Lênin</h1>
         <p>"Cái gì đám đông thừa nhận thì chính là chân lý" - một quan điểm không được chấp nhận.</p>
@@ -51,7 +51,7 @@ function App() {
         <p><strong>Tính Khách quan của Chân lý:</strong> CDBT thừa nhận chân lý khách quan, tức là chân lý không phụ thuộc vào con người và loài người, mà chỉ phụ thuộc vào thực tại khách quan. Nội dung của tri thức chân lý phản ánh là khách quan, không phụ thuộc vào tính đơn giản hay tính chặt chẽ của logic, không phụ thuộc vào lợi ích hay sự quy ước.</p>
         
         <div className="concept-image">
-          <img src="images/cccl.png" alt="Cán cân công lý - Biểu tượng của việc cân bằng và đánh giá chân lý một cách khách quan" />
+          <img src="/images/cccl.png" alt="Cán cân công lý - Biểu tượng của việc cân bằng và đánh giá chân lý một cách khách quan" />
         </div>
         
         <p><strong>Con đường biện chứng của sự nhận thức chân lý</strong> (theo V.I. Lênin) là: "Từ trực quan sinh động đến tư duy trừu tượng, và từ tư duy trừu tượng đến thực tiễn". Thực tiễn là tiêu chuẩn khách quan duy nhất để kiểm tra chân lý và bác bỏ sai lầm.</p>
@@ -86,7 +86,7 @@ function App() {
         <p>Quan điểm cho rằng "cái gì đám đông thừa nhận thì chính là chân lý" là quan điểm duy tâm, coi thường tính khách quan và quy luật khách quan.</p>
         
         <div className="concept-image">
-          <img src="images/dd.png" alt="Đám đông vs. Cá nhân - Minh họa cho khái niệm số đông tin theo" />
+          <img src="/images/dd.png" alt="Đám đông vs. Cá nhân - Minh họa cho khái niệm số đông tin theo" />
         </div>
         
         <p><strong>Tính chất của sự thừa nhận xã hội (Đám đông):</strong> Sự chấp nhận rộng rãi của số đông trong xã hội số (số đông tin theo) thể hiện ý thức chủ quan. Việc chấp nhận một quan điểm chỉ vì số đông tin theo mà thiếu sự kiểm chứng khách quan có thể dẫn đến những sai lầm nghiêm trọng, đi ngược lại các quy luật khách quan. Những người theo chủ nghĩa duy tâm thường cường điệu vai trò của yếu tố chủ quan và duy ý chí, và tin rằng ý thức có thể quyết định vật chất, trái ngược với nguyên tắc vật chất quyết định ý thức của CDBT.</p>

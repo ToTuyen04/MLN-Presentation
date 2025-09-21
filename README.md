@@ -28,6 +28,8 @@ npm run preview
 
 ## Deploy lên Vercel
 
+⚠️ **Lưu ý quan trọng:** Tất cả hình ảnh đã được di chuyển vào thư mục `public/images/` và đường dẫn đã được cập nhật để tương thích với Vercel deployment.
+
 ### Cách 1: Deploy từ GitHub (Khuyên dùng)
 
 1. **Push code lên GitHub:**
@@ -89,7 +91,8 @@ Sau khi deploy thành công, bạn sẽ nhận được URL như:
 
 ```
 presentation/
-├── images/           # Hình ảnh
+├── public/
+│   └── images/       # Hình ảnh (đã di chuyển vào public)
 ├── index.html       # HTML template
 ├── index.tsx        # React component chính
 ├── index.css        # Styles
