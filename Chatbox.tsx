@@ -29,7 +29,13 @@ const Chatbox: React.FC<ChatboxProps> = ({ isOpen, onToggle }) => {
   const testAPI = async () => {
     try {
       // Test với endpoint đơn giản hơn
-      const apiKey = 'AIzaSyCV4ScB6r0150jBWbg81uDQ3Nd7E0elfR8';
+      const apiKey = import.meta.env.VITE_GEMINI_API_KEY;
+      
+      if (!apiKey) {
+        console.error('API key not found in environment variables');
+        return;
+      }
+      
       const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${apiKey}`;
       
       const testRequest = {
@@ -86,7 +92,7 @@ const Chatbox: React.FC<ChatboxProps> = ({ isOpen, onToggle }) => {
     try {
       console.log('Đang gọi Google AI với câu hỏi:', userMessage);
       
-      const apiKey = 'AIzaSyCV4ScB6r0150jBWbg81uDQ3Nd7E0elfR8';
+      const apiKey = import.meta.env.VITE_GEMINI_API_KEY;
       const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${apiKey}`;
       
       const requestBody = {
