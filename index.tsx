@@ -4,11 +4,13 @@
  */
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom/client';
+import Chatbox from './Chatbox';
 import './modern-styles.css';
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [currentSlide, setCurrentSlide] = useState(1);
+  const [isChatboxOpen, setIsChatboxOpen] = useState(false);
   const totalSlides = 15;
 
   const toggleTheme = () => {
@@ -545,6 +547,12 @@ function App() {
 
       {/* Slide Content */}
       {renderSlideContent()}
+      
+      {/* Chatbox */}
+      <Chatbox 
+        isOpen={isChatboxOpen}
+        onToggle={() => setIsChatboxOpen(!isChatboxOpen)}
+      />
     </main>
   );
 }
